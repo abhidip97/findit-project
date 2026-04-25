@@ -1,0 +1,349 @@
+/* ── RESET ── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+
+/* ── WRAPPER ── */
+#dash-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ── SIDEBAR ── */
+#sidebar {
+  width: 240px;
+  background-color: #0F172A;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 16px;
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+}
+
+#sidebar-logo {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  display: block;
+  padding: 0 12px;
+}
+
+#sidebar-logo span { color: #F97316; }
+
+/* Admin badge under logo */
+#admin-badge {
+  background-color: rgba(239,68,68,0.15);
+  color: #f87171;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin: 0 12px 24px;
+  text-align: center;
+}
+
+#sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255,255,255,0.08);
+  color: #ffffff;
+}
+
+.sidebar-link.active {
+  background-color: #dc2626;  /* red for admin */
+  color: #ffffff;
+}
+
+.sidebar-icon { font-size: 1rem; }
+
+#sidebar-logout {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.5);
+  transition: background-color 0.2s, color 0.2s;
+  margin-top: 16px;
+}
+
+#sidebar-logout:hover {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+/* ── MAIN ── */
+#dash-main {
+  margin-left: 240px;
+  padding: 36px 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ── TOP BAR ── */
+#dash-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#dash-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-bottom: 4px;
+}
+
+#dash-sub {
+  font-size: 0.875rem;
+  color: #64748B;
+  max-width: 500px;
+}
+
+#topbar-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748B;
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 10px 18px;
+  white-space: nowrap;
+}
+
+/* ── STAT CARDS ── */
+#dash-stats,
+#dash-stats-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+.stat-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.stat-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stat-card-num {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0F172A;
+  letter-spacing: -0.5px;
+}
+
+.stat-card-label {
+  font-size: 0.75rem;
+  color: #64748B;
+  font-weight: 500;
+}
+
+/* ── TWO COLUMN LAYOUT ── */
+#dash-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* ── PANEL ── */
+.dash-panel {
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+/* ── SECTION HEADERS ── */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.view-all-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #dc2626;
+  text-decoration: none;
+}
+
+.view-all-link:hover { text-decoration: underline; }
+
+/* ── ADMIN TABLE ── */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.admin-table thead tr {
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.admin-table th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.admin-table td {
+  padding: 12px;
+  border-bottom: 1px solid #F8FAFC;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+  background-color: #F8FAFC;
+}
+
+/* ── USER CELL ── */
+.td-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.td-avatar-sm {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1D4ED8, #60a5fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.td-title {
+  display: block;
+  font-weight: 600;
+  color: #0F172A;
+  font-size: 0.82rem;
+}
+
+.td-cat {
+  display: block;
+  font-size: 0.72rem;
+  color: #64748B;
+}
+
+.td-icon {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+/* ── ROLE BADGES ── */
+.role-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.role-customer { background-color: #EFF6FF; color: #1D4ED8; }
+.role-provider { background-color: #FFF7ED; color: #F97316; }
+.role-admin    { background-color: #FEE2E2; color: #dc2626; }
+
+/* ── STATUS BADGES ── */
+.status-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.status-pending   { background-color: #FEF9C3; color: #854D0E; }
+.status-confirmed { background-color: #DCFCE7; color: #166534; }
+.status-completed { background-color: #F1F5F9; color: #475569; }
+.status-cancelled { background-color: #FEE2E2; color: #991B1B; }
+
+/* ── DELETE BUTTON ── */
+.btn-del-sm {
+  text-decoration: none;
+  background-color: #FEE2E2;
+  color: #991B1B;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-del-sm:hover { background-color: #fecaca; }

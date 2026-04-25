@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Findit.np</title>
+    <link rel="stylesheet" href="home css/home.css">
+    <link rel="stylesheet" href="home css/home_hero.css">
+    <link rel="stylesheet" href="home css/home_service.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Segoe+UI&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!-- nav bar -->
+<nav id="nav-bar">
+    <!-- logo  -->
+     <div class="logo">
+     <a href="home.html"><div id="logo">
+        FindIt<span id="logo-dot">.</span>np
+     </div></a></div>
+     <!-- middle part -->
+      <ul id="links">
+        <li><a href="#">Service</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">Providers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <!-- button for user -->
+       <div class="nav-button">
+        <a href="login.php" class="btn-login">Login</a> 
+        <a href="register.php" class="btn-signup">Get Started</a>
+       </div>
+</nav>
+<!--  -->
+
+<!-- main highlight area -->
+
+<section id="hero">
+    
+    <div id="hero-badge">
+        <span class="dot-badge"></span>
+        Now availabe in your area
+    </div>
+
+    <h1 id="hero-title">
+        Find <em>Trusted</em> Local <br>
+        Services in your <br>
+        <span class="neighborhood">Neighborhood</span>
+    </h1>
+
+    <p id="hero-sub-text">
+        Connect with verified electricians, plumbers, tutors,
+    cleaners and more — right in your neighborhood.
+    </p>
+
+    <div id="search-box">
+        <span id="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="What service are you looking for ?">
+        <div id="search-divider"></div>
+        <select id="location-select">
+            <option value="kathmandu">Kathmandu</option>
+            <option value="Lalitpur">Lalitpur</option>
+            <option value="Bhaktapur">Bhaktapur</option>
+        </select>
+        <button id="search-btn">Search</button>
+    </div>
+    
+    <div id="search-tags">
+    <span class="tags-label">Popular:</span>
+    <a href="#" class="tag">Electrician</a>
+    <a href="#" class="tag">Plumber</a>
+    <a href="#" class="tag">Tutor</a>
+    <a href="#" class="tag">Cleaner</a>
+    <a href="#" class="tag">Carpenter</a>
+  </div>
+
+<!-- RIGHT SIDE -->
+<div id="hero-right">
+  <img src="image/home.png" alt="Plumber at work" id="hero-img">
+</div>
+</section>
+
+<!-- service -->
+ <section id="services">
+    <div id="service-header">
+        <span class="section-lable">Our Services</span>
+       <h2> <span class="section-title">Popular Services Categories</span></h2>
+        <p class="section-sub"> Browse from dozens of service categories and find
+      the right professional for your needs.</p>
+    </div>
+
+    <div id="service-grid">
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
+        <h6 class="service-name">Electrician</h6>
+        <p class="service-desc">Wiring , repairs and installation</p>
+        <span class="service-count">X Providers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">🔧</div>
+        <h6 class="service-name">Plumber</h6>
+        <p class="service-desc">Pipes, leaks & fixtures</p>
+        <span class="service-count">X Providers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">🪵</div>
+        <h6 class="service-name">Carpenter</h6>
+        <p class="service-desc">Furniture & woodworks</p>
+        <span class="service-count">X Providers</span>
+      </div>
+
+      
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">🧹</div>
+        <h6 class="service-name">Cleaner</h6>
+        <p class="service-desc">Home & office cleaning</p>
+        <span class="service-count">X Providers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">🎨</div>
+        <h6 class="service-name">Painter</h6>
+        <p class="service-desc">Interior & exterior</p>
+        <span class="service-count">X Providers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">🛠️</div>
+        <h6 class="service-name">Mechanic</h6>
+        <p class="service-desc">Vehicle repari & service</p>
+        <span class="service-count">X Providers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
+        <h6 class="service-name">Electrician</h6>
+        <p class="service-desc">Wiring , repairs and installation</p>
+        <span class="service-count">340 Providers</span>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
+        <h6 class="service-name">Electrician</h6>
+        <p class="service-desc">Wiring , repairs and installation</p>
+        <span class="service-count">340 Providers</span>
+      </div>
+
+    </div>
+
+ </section>
+
+<section id="how-it-works">
+
+  <div id="hiw-header">
+    <span class="section-label">Simple Process</span>
+    <h2 class="section-title">How FindIt Nepal Works</h2>
+    <p class="section-sub">
+      Get the help you need in three easy steps —
+      no hassle, no confusion.
+    </p>
+  </div>
+
+  <div id="hiw-steps">
+
+    <div class="hiw-card">
+      <div class="hiw-num">1</div>
+      <div class="hiw-icon">🔍</div>
+      <h5 class="hiw-title">Search a Service</h5>
+      <p class="hiw-desc">
+        Enter the service you need and your location.
+        Filter by category, rating, or price to find
+        the perfect match.
+      </p>
+    </div>
+
+    <div class="hiw-arrow">→</div>
+
+    <div class="hiw-card">
+      <div class="hiw-num">2</div>
+      <div class="hiw-icon">👤</div>
+      <h5 class="hiw-title">Compare & Choose</h5>
+      <p class="hiw-desc">
+        View provider profiles with ratings, reviews,
+        experience and pricing. Compare before
+        making a decision.
+      </p>
+    </div>
+\
+    <div class="hiw-arrow">→</div>
+
+    <div class="hiw-card">
+      <div class="hiw-num">3</div>
+      <div class="hiw-icon">✅</div>
+      <h5 class="hiw-title">Book & Connect</h5>
+      <p class="hiw-desc">
+        Send a booking request directly from the
+        platform. Connect with your provider and
+        leave a review after the job is done.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom two role cards -->
+  <div id="hiw-roles">
+
+    <!-- For Customers -->
+    <div class="hiw-role-card" id="role-customer">
+      <div class="hiw-role-icon">👤</div>
+      <h5 class="hiw-role-title">For Customers</h5>
+      <p class="hiw-role-desc">
+        Search and book verified service providers in
+        your area with ease. Transparent pricing, real
+        reviews and direct communication.
+      </p>
+      <a href="#" class="hiw-role-link">
+        Find a Service →
+      </a>
+    </div>
+
+    <!-- For Providers -->
+    <div class="hiw-role-card" id="role-provider">
+      <div class="hiw-role-icon">🛠️</div>
+      <h5 class="hiw-role-title">For Service Providers</h5>
+      <p class="hiw-role-desc">
+        List your skills, set your availability and grow
+        your client base. Manage bookings and build your
+        professional reputation.
+      </p>
+      <a href="#" class="hiw-role-link">
+        Register as Provider →
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURED PROVIDERS SECTION -->
+<section id="providers">
+
+  <!-- Section heading -->
+  <div id="providers-header">
+    <div id="providers-header-left">
+      <span class="section-label">Top Rated</span>
+      <h2 class="section-title">Featured Providers</h2>
+      <p class="section-sub">
+        Handpicked, verified professionals
+        with outstanding reviews.
+      </p>
+    </div>
+    <a href="#" class="btn-view-all">View All Providers</a>
+  </div>
+
+  <!-- Provider cards grid -->
+  <div id="providers-grid">
+
+    <!-- Card 1 -->
+    <div class="provider-card">
+      <div class="p-avatar" style="background: linear-gradient(135deg, #1D4ED8, #3b82f6);">BT</div>
+      <h5 class="p-name">Binod Tamang</h5>
+      <p class="p-service">Plumber</p>
+      <p class="p-location">📍 Lalitpur, Kathmandu</p>
+      <div class="p-rating">
+        <span class="p-stars">★★★★★</span>
+        <span class="p-reviews">4.8 (89 reviews)</span>
+      </div>
+      <div class="p-badges">
+        <span class="badge-chip">Verified</span>
+        <span class="badge-chip orange">Top Rated</span>
+      </div>
+      <p class="p-price">Rs. 600 / visit</p>
+      <button class="btn-book-now">Book Now</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="provider-card">
+      <div class="p-avatar" style="background: linear-gradient(135deg, #7c3aed, #a78bfa);">SK</div>
+      <h5 class="p-name">Sita Karmacharya</h5>
+      <p class="p-service">Private Tutor · Class 9–12</p>
+      <p class="p-location">📍 Baneshwor, Kathmandu</p>
+      <div class="p-rating">
+        <span class="p-stars">★★★★★</span>
+        <span class="p-reviews">4.9 (212 reviews)</span>
+      </div>
+      <div class="p-badges">
+        <span class="badge-chip">Verified</span>
+        <span class="badge-chip orange">Top Rated</span>
+      </div>
+      <p class="p-price">Rs. 1,200 / hr</p>
+      <button class="btn-book-now">Book Now</button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="provider-card">
+      <div class="p-avatar" style="background: linear-gradient(135deg, #059669, #34d399);">PM</div>
+      <h5 class="p-name">Prakash Magar</h5>
+      <p class="p-service">Carpenter & Woodworker</p>
+      <p class="p-location">📍 Patan, Lalitpur</p>
+      <div class="p-rating">
+        <span class="p-stars">★★★★★</span>
+        <span class="p-reviews">4.7 (63 reviews)</span>
+      </div>
+      <div class="p-badges">
+        <span class="badge-chip">Verified</span>
+      </div>
+      <p class="p-price">Rs. 800 / day</p>
+      <button class="btn-book-now">Book Now</button>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="provider-card">
+      <div class="p-avatar" style="background: linear-gradient(135deg, #dc2626, #f87171);">AM</div>
+      <h5 class="p-name">Anita Maharjan</h5>
+      <p class="p-service">Home Cleaner</p>
+      <p class="p-location">📍 Kirtipur, Kathmandu</p>
+      <div class="p-rating">
+        <span class="p-stars">★★★★★</span>
+        <span class="p-reviews">4.9 (147 reviews)</span>
+      </div>
+      <div class="p-badges">
+        <span class="badge-chip">Verified</span>
+        <span class="badge-chip orange">Top Rated</span>
+      </div>
+      <p class="p-price">Rs. 1,000 / session</p>
+      <button class="btn-book-now">Book Now</button>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA SECTION -->
+<section id="cta">
+
+  <!-- Left side -->
+  <div id="cta-left">
+
+    <h2 id="cta-title">
+      Ready to Find Your Perfect <br>
+      Service Provider?
+    </h2>
+
+    <p id="cta-sub">
+      Join thousands of satisfied customers and trusted
+      professionals already using FindIt Nepal.
+    </p>
+
+    <!-- Two buttons -->
+    <div id="cta-buttons">
+      <a href="customer/dashboard.php" class="btn-cta-white">Find a Service</a>
+      <a href="register.php" class="btn-cta-outline">Register as Provider</a>
+    </div>
+
+    <!-- Feature checklist -->
+    <div id="cta-features">
+      <div class="cta-feature">
+        <span class="cta-check">✓</span>
+        Free to join
+      </div>
+      <div class="cta-feature">
+        <span class="cta-check">✓</span>
+        Verified providers
+      </div>
+      <div class="cta-feature">
+        <span class="cta-check">✓</span>
+        Secure bookings
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Right side: Provider signup card -->
+  <div id="cta-right">
+    <div id="cta-card">
+      <div id="cta-card-icon">🛠️</div>
+      <h5 id="cta-card-title">Are you a service professional?</h5>
+      <p id="cta-card-desc">
+        Register your skills and start receiving booking
+        requests from customers in your area today.
+      </p>
+      <a href="login.php" id="cta-card-btn">Join as Provider →</a>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+
+  <!-- Top part: 4 columns -->
+  <div id="footer-top">
+
+    <!-- Column 1: Brand -->
+    <div id="footer-brand-col">
+      <a href="index.html" id="footer-logo">
+        FindIt<span id="footer-logo-dot">.</span>np
+      </a>
+      <p id="footer-desc">
+        Nepal's trusted platform for connecting
+        customers with verified local service providers.
+        Fast, reliable and right in your neighborhood.
+      </p>
+
+    </div>
+</footer>
+</body>
+</html>
