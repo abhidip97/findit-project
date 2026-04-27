@@ -8,149 +8,157 @@
     <link rel="stylesheet" href="home css/home_hero.css">
     <link rel="stylesheet" href="home css/home_service.css">    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Segoe+UI&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-<!-- nav bar -->
+
+<!-- NAVBAR -->
 <nav id="nav-bar">
-    <!-- logo  -->
-     <div class="logo">
-     <a href="home.html"><div id="logo">
-        FindIt<span id="logo-dot">.</span>np
-     </div></a></div>
-     <!-- middle part -->
-      <ul id="links">
-        <li><a href="#">Service</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">Providers</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
-      <!-- button for user -->
-       <div class="nav-button">
-        <a href="login.php" class="btn-login">Login</a> 
-        <a href="register.php" class="btn-signup">Get Started</a>
-       </div>
+  <div class="logo">
+    <a href="home.html">
+      <div id="logo">FindIt<span id="logo-dot">.</span>np</div>
+    </a>
+  </div>
+
+  <ul id="links">
+    <li><a href="#services">Service</a></li>
+    <li><a href="#how-it-works">How it works</a></li>
+    <li><a href="#providers">Providers</a></li>
+    <li><a href="#footer">About</a></li>
+  </ul>
+
+  <div class="nav-button">
+    <a href="login.php" class="btn-login">Login</a>
+    <a href="register.php" class="btn-signup">Get Started</a>
+  </div>
 </nav>
-<!--  -->
 
-<!-- main highlight area -->
-
+<!-- HERO SECTION -->
 <section id="hero">
-    
+
+  <div id="hero-left">
+
     <div id="hero-badge">
-        <span class="dot-badge"></span>
-        Now availabe in your area
+      <span class="dot-badge"></span>
+      Now available in your area
     </div>
 
     <h1 id="hero-title">
-        Find <em>Trusted</em> Local <br>
-        Services in your <br>
-        <span class="neighborhood">Neighborhood</span>
+      Find <em>Trusted</em> Local <br>
+      Services in your <br>
+      <span class="neighborhood">Neighborhood</span>
     </h1>
 
     <p id="hero-sub-text">
-        Connect with verified electricians, plumbers, tutors,
-    cleaners and more — right in your neighborhood.
+      Connect with verified electricians, plumbers, tutors,
+      cleaners and more — right in your neighborhood.
     </p>
 
     <div id="search-box">
-        <span id="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="What service are you looking for ?">
-        <div id="search-divider"></div>
-        <select id="location-select">
-            <option value="kathmandu">Kathmandu</option>
-            <option value="Lalitpur">Lalitpur</option>
-            <option value="Bhaktapur">Bhaktapur</option>
-        </select>
-        <button id="search-btn">Search</button>
+      <span id="search-icon">🔍</span>
+      <input type="text" id="search-input"
+        placeholder="What service are you looking for?">
+      <div id="search-divider"></div>
+      <select id="location-select">
+        <option value="Kathmandu">Kathmandu</option>
+        <option value="Lalitpur">Lalitpur</option>
+        <option value="Bhaktapur">Bhaktapur</option>
+      </select>
+      <button id="search-btn">Search</button>
     </div>
-    
+
     <div id="search-tags">
-    <span class="tags-label">Popular:</span>
-    <a href="#" class="tag">Electrician</a>
-    <a href="#" class="tag">Plumber</a>
-    <a href="#" class="tag">Tutor</a>
-    <a href="#" class="tag">Cleaner</a>
-    <a href="#" class="tag">Carpenter</a>
+      <span class="tags-label">Popular:</span>
+      <a href="customer/search.php?search=Electrician" class="tag">Electrician</a>
+      <a href="customer/search.php?search=Plumber" class="tag">Plumber</a>
+      <a href="customer/search.php?search=Tutor" class="tag">Tutor</a>
+      <a href="customer/search.php?search=Cleaner" class="tag">Cleaner</a>
+      <a href="customer/search.php?search=Carpenter" class="tag">Carpenter</a>
+    </div>
+
   </div>
 
-<!-- RIGHT SIDE -->
-<div id="hero-right">
-  <img src="image/home.png" alt="Plumber at work" id="hero-img">
-</div>
+  <!-- RIGHT SIDE -->
+  <div id="hero-right">
+    <img src="image/home.png" alt="Plumber at work" id="hero-img">
+  </div>
+
 </section>
 
-<!-- service -->
- <section id="services">
-    <div id="service-header">
-        <span class="section-lable">Our Services</span>
-       <h2> <span class="section-title">Popular Services Categories</span></h2>
-        <p class="section-sub"> Browse from dozens of service categories and find
-      the right professional for your needs.</p>
+<!-- SERVICE SECTION -->
+<section id="services">
+
+  <div id="service-header">
+    <span class="section-lable">Our Services</span>
+    <h2><span class="section-title">Popular Services Categories</span></h2>
+    <p class="section-sub">
+      Browse from dozens of service categories and find
+      the right professional for your needs.
+    </p>
+  </div>
+
+  <div id="service-grid">
+
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
+      <h6 class="service-name">Electrician</h6>
+      <p class="service-desc">Wiring, repairs and installation</p>
+      <span class="service-count">X Providers</span>
     </div>
 
-    <div id="service-grid">
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
-        <h6 class="service-name">Electrician</h6>
-        <p class="service-desc">Wiring , repairs and installation</p>
-        <span class="service-count">X Providers</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">🔧</div>
-        <h6 class="service-name">Plumber</h6>
-        <p class="service-desc">Pipes, leaks & fixtures</p>
-        <span class="service-count">X Providers</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">🪵</div>
-        <h6 class="service-name">Carpenter</h6>
-        <p class="service-desc">Furniture & woodworks</p>
-        <span class="service-count">X Providers</span>
-      </div>
-
-      
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">🧹</div>
-        <h6 class="service-name">Cleaner</h6>
-        <p class="service-desc">Home & office cleaning</p>
-        <span class="service-count">X Providers</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">🎨</div>
-        <h6 class="service-name">Painter</h6>
-        <p class="service-desc">Interior & exterior</p>
-        <span class="service-count">X Providers</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">🛠️</div>
-        <h6 class="service-name">Mechanic</h6>
-        <p class="service-desc">Vehicle repari & service</p>
-        <span class="service-count">X Providers</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
-        <h6 class="service-name">Electrician</h6>
-        <p class="service-desc">Wiring , repairs and installation</p>
-        <span class="service-count">340 Providers</span>
-      </div>
-
-      <div class="service-card">
-        <div class="service-icon" style="background-color: #FEF3C7;">⚡</div>
-        <h6 class="service-name">Electrician</h6>
-        <p class="service-desc">Wiring , repairs and installation</p>
-        <span class="service-count">340 Providers</span>
-      </div>
-
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #DBEAFE;">🔧</div>
+      <h6 class="service-name">Plumber</h6>
+      <p class="service-desc">Pipes, leaks & fixtures</p>
+      <span class="service-count">X Providers</span>
     </div>
 
- </section>
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #D1FAE5;">🪵</div>
+      <h6 class="service-name">Carpenter</h6>
+      <p class="service-desc">Furniture & woodworks</p>
+      <span class="service-count">X Providers</span>
+    </div>
 
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #E0E7FF;">🧹</div>
+      <h6 class="service-name">Cleaner</h6>
+      <p class="service-desc">Home & office cleaning</p>
+      <span class="service-count">X Providers</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #FEE2E2;">🎨</div>
+      <h6 class="service-name">Painter</h6>
+      <p class="service-desc">Interior & exterior</p>
+      <span class="service-count">X Providers</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #CCFBF1;">🛠️</div>
+      <h6 class="service-name">Mechanic</h6>
+      <p class="service-desc">Vehicle repair & service</p>
+      <span class="service-count">X Providers</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #F3F4F6;">💻</div>
+      <h6 class="service-name">IT Support</h6>
+      <p class="service-desc">PC, software & networks</p>
+      <span class="service-count">X Providers</span>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon" style="background-color: #FEF9C3;">📚</div>
+      <h6 class="service-name">Tutor</h6>
+      <p class="service-desc">All subjects & levels</p>
+      <span class="service-count">X Providers</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- HOW IT WORKS -->
 <section id="how-it-works">
 
   <div id="hiw-header">
@@ -187,7 +195,7 @@
         making a decision.
       </p>
     </div>
-\
+
     <div class="hiw-arrow">→</div>
 
     <div class="hiw-card">
@@ -203,10 +211,8 @@
 
   </div>
 
-  <!-- Bottom two role cards -->
   <div id="hiw-roles">
 
-    <!-- For Customers -->
     <div class="hiw-role-card" id="role-customer">
       <div class="hiw-role-icon">👤</div>
       <h5 class="hiw-role-title">For Customers</h5>
@@ -215,12 +221,11 @@
         your area with ease. Transparent pricing, real
         reviews and direct communication.
       </p>
-      <a href="#" class="hiw-role-link">
+      <a href="customer/search.php" class="hiw-role-link">
         Find a Service →
       </a>
     </div>
 
-    <!-- For Providers -->
     <div class="hiw-role-card" id="role-provider">
       <div class="hiw-role-icon">🛠️</div>
       <h5 class="hiw-role-title">For Service Providers</h5>
@@ -229,7 +234,7 @@
         your client base. Manage bookings and build your
         professional reputation.
       </p>
-      <a href="#" class="hiw-role-link">
+      <a href="register.php" class="hiw-role-link">
         Register as Provider →
       </a>
     </div>
@@ -238,10 +243,9 @@
 
 </section>
 
-<!-- FEATURED PROVIDERS SECTION -->
+<!-- FEATURED PROVIDERS -->
 <section id="providers">
 
-  <!-- Section heading -->
   <div id="providers-header">
     <div id="providers-header-left">
       <span class="section-label">Top Rated</span>
@@ -251,15 +255,14 @@
         with outstanding reviews.
       </p>
     </div>
-    <a href="#" class="btn-view-all">View All Providers</a>
+    <a href="customer/search.php" class="btn-view-all">View All Providers</a>
   </div>
 
-  <!-- Provider cards grid -->
   <div id="providers-grid">
 
-    <!-- Card 1 -->
     <div class="provider-card">
-      <div class="p-avatar" style="background: linear-gradient(135deg, #1D4ED8, #3b82f6);">BT</div>
+      <div class="p-avatar"
+           style="background: linear-gradient(135deg, #1D4ED8, #3b82f6);">BT</div>
       <h5 class="p-name">Binod Tamang</h5>
       <p class="p-service">Plumber</p>
       <p class="p-location">📍 Lalitpur, Kathmandu</p>
@@ -272,12 +275,12 @@
         <span class="badge-chip orange">Top Rated</span>
       </div>
       <p class="p-price">Rs. 600 / visit</p>
-      <button class="btn-book-now">Book Now</button>
+      <a href="login.php" class="btn-book-now">Book Now</a>
     </div>
 
-    <!-- Card 2 -->
     <div class="provider-card">
-      <div class="p-avatar" style="background: linear-gradient(135deg, #7c3aed, #a78bfa);">SK</div>
+      <div class="p-avatar"
+           style="background: linear-gradient(135deg, #7c3aed, #a78bfa);">SK</div>
       <h5 class="p-name">Sita Karmacharya</h5>
       <p class="p-service">Private Tutor · Class 9–12</p>
       <p class="p-location">📍 Baneshwor, Kathmandu</p>
@@ -290,12 +293,12 @@
         <span class="badge-chip orange">Top Rated</span>
       </div>
       <p class="p-price">Rs. 1,200 / hr</p>
-      <button class="btn-book-now">Book Now</button>
+      <a href="login.php" class="btn-book-now">Book Now</a>
     </div>
 
-    <!-- Card 3 -->
     <div class="provider-card">
-      <div class="p-avatar" style="background: linear-gradient(135deg, #059669, #34d399);">PM</div>
+      <div class="p-avatar"
+           style="background: linear-gradient(135deg, #059669, #34d399);">PM</div>
       <h5 class="p-name">Prakash Magar</h5>
       <p class="p-service">Carpenter & Woodworker</p>
       <p class="p-location">📍 Patan, Lalitpur</p>
@@ -307,12 +310,12 @@
         <span class="badge-chip">Verified</span>
       </div>
       <p class="p-price">Rs. 800 / day</p>
-      <button class="btn-book-now">Book Now</button>
+      <a href="login.php" class="btn-book-now">Book Now</a>
     </div>
 
-    <!-- Card 4 -->
     <div class="provider-card">
-      <div class="p-avatar" style="background: linear-gradient(135deg, #dc2626, #f87171);">AM</div>
+      <div class="p-avatar"
+           style="background: linear-gradient(135deg, #dc2626, #f87171);">AM</div>
       <h5 class="p-name">Anita Maharjan</h5>
       <p class="p-service">Home Cleaner</p>
       <p class="p-location">📍 Kirtipur, Kathmandu</p>
@@ -325,18 +328,16 @@
         <span class="badge-chip orange">Top Rated</span>
       </div>
       <p class="p-price">Rs. 1,000 / session</p>
-      <button class="btn-book-now">Book Now</button>
+      <a href="login.php" class="btn-book-now">Book Now</a>
     </div>
 
   </div>
 
 </section>
 
-
 <!-- CTA SECTION -->
 <section id="cta">
 
-  <!-- Left side -->
   <div id="cta-left">
 
     <h2 id="cta-title">
@@ -349,13 +350,11 @@
       professionals already using FindIt Nepal.
     </p>
 
-    <!-- Two buttons -->
     <div id="cta-buttons">
-      <a href="customer/dashboard.php" class="btn-cta-white">Find a Service</a>
+      <a href="customer/search.php" class="btn-cta-white">Find a Service</a>
       <a href="register.php" class="btn-cta-outline">Register as Provider</a>
     </div>
 
-    <!-- Feature checklist -->
     <div id="cta-features">
       <div class="cta-feature">
         <span class="cta-check">✓</span>
@@ -373,7 +372,6 @@
 
   </div>
 
-  <!-- Right side: Provider signup card -->
   <div id="cta-right">
     <div id="cta-card">
       <div id="cta-card-icon">🛠️</div>
@@ -382,21 +380,17 @@
         Register your skills and start receiving booking
         requests from customers in your area today.
       </p>
-      <a href="login.php" id="cta-card-btn">Join as Provider →</a>
+      <a href="register.php" id="cta-card-btn">Join as Provider →</a>
     </div>
   </div>
 
 </section>
 
-<!-- FOOTER -->
+<!-- FOOTER (unchanged) -->
 <footer id="footer">
-
-  <!-- Top part: 4 columns -->
   <div id="footer-top">
-
-    <!-- Column 1: Brand -->
     <div id="footer-brand-col">
-      <a href="index.html" id="footer-logo">
+      <a href="home.html" id="footer-logo">
         FindIt<span id="footer-logo-dot">.</span>np
       </a>
       <p id="footer-desc">
@@ -404,8 +398,30 @@
         customers with verified local service providers.
         Fast, reliable and right in your neighborhood.
       </p>
-
     </div>
+  </div>
 </footer>
+
+<!-- SEARCH SCRIPT -->
+<script>
+  document.getElementById('search-btn').addEventListener('click', function() {
+    const query    = document.getElementById('search-input').value;
+    const location = document.getElementById('location-select').value;
+    if (query.trim() !== '') {
+      window.location.href = 'customer/search.php?search=' +
+        encodeURIComponent(query) +
+        '&location=' + encodeURIComponent(location);
+    } else {
+      window.location.href = 'customer/search.php';
+    }
+  });
+
+  document.getElementById('search-input').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      document.getElementById('search-btn').click();
+    }
+  });
+</script>
+
 </body>
 </html>
