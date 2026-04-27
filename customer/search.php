@@ -86,7 +86,7 @@ $services = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   <!-- SIDEBAR -->
   <aside id="sidebar">
-    <a href="../index.html" id="sidebar-logo">
+    <a href="../home.html" id="sidebar-logo">
       FindIt<span>.</span>np
     </a>
     <nav id="sidebar-nav">

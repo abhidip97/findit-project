@@ -118,7 +118,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <!-- SIDEBAR -->
   <aside id="sidebar">
-    <a href="../index.html" id="sidebar-logo">
+    <a href="../home.html" id="sidebar-logo">
       FindIt<span>.</span>np
     </a>
     <nav id="sidebar-nav">
@@ -185,9 +185,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           <div class="form-group">
             <label class="form-label">Date of Service *</label>
+            <!-- REPLACE with this -->
             <input type="date" name="book_date" class="form-input"
-              min="<?= date('Y-m-d', strtotime('+1 day')) ?>"
-              value="<?= isset($_POST['book_date']) ? $_POST['book_date'] : '' ?>">
+              min="<?= date('Y-m-d') ?>"
+              value="<?= isset($_POST['book_date']) ? $_POST['book_date'] : date('Y-m-d') ?>">
           </div>
 
           <div class="form-group">

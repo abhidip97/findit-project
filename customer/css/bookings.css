@@ -1,0 +1,221 @@
+/* ── FIND SERVICE BUTTON ── */
+#btn-find-service {
+  text-decoration: none;
+  background-color: #1D4ED8;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 11px 22px;
+  border-radius: 10px;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+#btn-find-service:hover {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+}
+
+/* ── STATUS TABS ── */
+#status-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.status-tab {
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #64748B;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1.5px solid #E2E8F0;
+  background-color: #ffffff;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.status-tab:hover {
+  border-color: #1D4ED8;
+  color: #1D4ED8;
+}
+
+.status-tab.active {
+  background-color: #1D4ED8;
+  color: #ffffff;
+  border-color: #1D4ED8;
+}
+
+/* ── BOOKINGS LIST ── */
+#bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── SINGLE BOOKING ITEM ── */
+.booking-item {
+  background-color: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.booking-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transform: translateY(-2px);
+}
+
+/* ── LEFT SIDE ── */
+.booking-item-left {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.booking-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #F8FAFC;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 6px;
+}
+
+.booking-meta {
+  font-size: 0.78rem;
+  color: #64748B;
+  margin-bottom: 3px;
+}
+
+.booking-message {
+  font-size: 0.78rem;
+  color: #94A3B8;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+/* ── RIGHT SIDE ── */
+.booking-item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.booking-price {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0F172A;
+}
+
+.booking-price span {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: #64748B;
+}
+
+/* ── STATUS BADGES ── */
+.status-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.status-pending   { background-color: #FEF9C3; color: #854D0E; }
+.status-confirmed { background-color: #DCFCE7; color: #166534; }
+.status-completed { background-color: #F1F5F9; color: #475569; }
+.status-cancelled { background-color: #FEE2E2; color: #991B1B; }
+
+/* ── BOOKING ACTIONS ── */
+.booking-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.btn-cancel-booking {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #FEE2E2;
+  color: #991B1B;
+  transition: background-color 0.2s;
+}
+
+.btn-cancel-booking:hover { background-color: #fecaca; }
+
+.btn-review {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: #FEF9C3;
+  color: #854D0E;
+  transition: background-color 0.2s;
+}
+
+.btn-review:hover { background-color: #fef08a; }
+
+.reviewed-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #166534;
+  background-color: #DCFCE7;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* ── EMPTY STATE ── */
+#empty-state {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#empty-icon { font-size: 3rem; margin-bottom: 14px; }
+
+#empty-state h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F172A;
+  margin-bottom: 8px;
+}
+
+#empty-state p {
+  font-size: 0.875rem;
+  color: #64748B;
+  margin-bottom: 20px;
+}
+
+.btn-empty {
+  text-decoration: none;
+  background-color: #1D4ED8;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
