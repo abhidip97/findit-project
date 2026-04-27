@@ -87,7 +87,7 @@ $recent_bookings = $pdo->query("
 
   <!-- SIDEBAR -->
   <aside id="sidebar">
-    <a href="../index.html" id="sidebar-logo">
+    <a href="../home.html" id="sidebar-logo">
       FindIt<span>.</span>np
     </a>
 
@@ -106,12 +106,12 @@ $recent_bookings = $pdo->query("
       <a href="bookings.php" class="sidebar-link">
         <span class="sidebar-icon">📅</span> Manage Bookings
       </a>
-      <a href="reviews.php" class="sidebar-link">
+      <!-- <a href="reviews.php" class="sidebar-link">
         <span class="sidebar-icon">⭐</span> Reviews
-      </a>
-      <a href="categories.php" class="sidebar-link">
+      </a> -->
+      <!-- <a href="categories.php" class="sidebar-link">
         <span class="sidebar-icon">📂</span> Categories
-      </a>
+      </a> -->
     </nav>
 
     <a href="../logout.php" id="sidebar-logout">
