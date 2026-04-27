@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <!-- Left side: branding -->
   <div id="auth-left">
-    <a href="index.html" id="auth-logo">
+    <a href="home.html" id="auth-logo">
       FindIt<span>.</span>np
     </a>
     <h2>Join thousands of users across Nepal</h2>
