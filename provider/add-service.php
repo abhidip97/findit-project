@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   <!-- SIDEBAR -->
   <aside id="sidebar">
-    <a href="../index.html" id="sidebar-logo">
+    <a href="../home.html" id="sidebar-logo">
       FindIt<span>.</span>np
     </a>
     <nav id="sidebar-nav">

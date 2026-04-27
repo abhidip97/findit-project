@@ -107,7 +107,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["booking_id"], $_POST["
 
   <!-- SIDEBAR -->
   <aside id="sidebar">
-    <a href="../index.html" id="sidebar-logo">
+    <a href="../home.html" id="sidebar-logo">
       FindIt<span>.</span>np
     </a>
 
